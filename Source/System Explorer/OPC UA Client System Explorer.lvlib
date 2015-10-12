@@ -7,12 +7,16 @@
 		<Item Name="Dynamically Called" Type="Folder">
 			<Item Name="Actions" Type="Folder"/>
 			<Item Name="Extra Pages" Type="Folder">
+				<Item Name="Data Folder Offline.vi" Type="VI" URL="../Data Folder Offline.vi"/>
 				<Item Name="Data Folder.vi" Type="VI" URL="../Data Folder.vi"/>
 				<Item Name="Data Tag.vi" Type="VI" URL="../Data Tag.vi"/>
-				<Item Name="Data.vi" Type="VI" URL="../Data.vi"/>
 				<Item Name="Status.vi" Type="VI" URL="../Status.vi"/>
+				<Item Name="Tags.vi" Type="VI" URL="../Tags.vi"/>
 			</Item>
 			<Item Name="RTMs" Type="Folder">
+				<Item Name="Add Offline Data Folder.vi" Type="VI" URL="../RTMs/Add Offline Data Folder.vi"/>
+				<Item Name="EnableDisable Main Page.vi" Type="VI" URL="../RTMs/EnableDisable Main Page.vi"/>
+				<Item Name="Import OPC Channels.vi" Type="VI" URL="../RTMs/Import OPC Channels.vi"/>
 				<Item Name="Select OPC Channels.vi" Type="VI" URL="../RTMs/Select OPC Channels.vi"/>
 			</Item>
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
@@ -20,14 +24,20 @@
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Add Sections and Leaves.vi" Type="VI" URL="../SubVIs/Add Sections and Leaves.vi"/>
+			<Item Name="Change All Channel Tags.vi" Type="VI" URL="../SubVIs/Change All Channel Tags.vi"/>
 			<Item Name="Connection.Properties.vi" Type="VI" URL="../SubVIs/Connection.Properties.vi"/>
 			<Item Name="Defer Front Panel Updates.vi" Type="VI" URL="../SubVIs/Defer Front Panel Updates.vi"/>
 			<Item Name="Handle Symbol Selection.vi" Type="VI" URL="../SubVIs/Handle Symbol Selection.vi"/>
+			<Item Name="Live.Load OPC Tree.vi" Type="VI" URL="../SubVIs/Live.Load OPC Tree.vi"/>
+			<Item Name="Live.Recurse Through OPC Items.vi" Type="VI" URL="../SubVIs/Live.Recurse Through OPC Items.vi"/>
+			<Item Name="Load CSV File.vi" Type="VI" URL="../SubVIs/Load CSV File.vi"/>
 			<Item Name="Load Help File.vi" Type="VI" URL="../SubVIs/Load Help File.vi"/>
-			<Item Name="Load OPC Tree.vi" Type="VI" URL="../SubVIs/Load OPC Tree.vi"/>
-			<Item Name="Recurse Through OPC Items.vi" Type="VI" URL="../SubVIs/Recurse Through OPC Items.vi"/>
+			<Item Name="Offline.Load OPC Tree.vi" Type="VI" URL="../SubVIs/Offline.Load OPC Tree.vi"/>
+			<Item Name="Remove Quotes from String.vi" Type="VI" URL="../SubVIs/Remove Quotes from String.vi"/>
 			<Item Name="Select OPC Tags.vi" Type="VI" URL="../SubVIs/Select OPC Tags.vi"/>
 		</Item>
-		<Item Name="Types" Type="Folder"/>
+		<Item Name="Types" Type="Folder">
+			<Item Name="Tag Selection Mode.ctl" Type="VI" URL="../Types/Tag Selection Mode.ctl"/>
+		</Item>
 	</Item>
 </Library>

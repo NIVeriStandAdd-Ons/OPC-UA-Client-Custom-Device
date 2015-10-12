@@ -53,13 +53,56 @@
       </Name>
       <GUID>b427fdee-6f3d-4280-85b2-59e4741516b9</GUID>
       <Glyph>
-			  <Type>To Application Data Dir</Type>
-			  <Path>System Explorer\Glyphs\network.png</Path>
+			  <Type>To Common Doc Dir</Type>
+			  <Path>Custom Devices\OPC UA Client Addon\Glyphs\OPC.png</Path>
 		  </Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
 		    <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Main Page.vi</Path>
       </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>0b99f002-82ba-4806-a970-70f38925f453</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Disable</eng>
+            <loc>Disable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>OPC UA Client</eng>
+        <loc>OPC UA Client</loc>
+      </Name>
+      <GUID>f6414441-41fc-4e4d-ba9d-63aca55f0f7b</GUID>
+        <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\OPC Disabled.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>0b99f002-82ba-4806-a970-70f38925f453</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Enable</eng>
+            <loc>Enable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
     </Page>
     <Page>
       <Name>
@@ -80,73 +123,8 @@
     </Page>
     <Page>
       <Name>
-        <eng>Data</eng>
-        <loc>Data</loc>
-      </Name>
-      <DisallowRenaming>true</DisallowRenaming>
-      <DeleteProtection>true</DeleteProtection>
-      <GUID>7edfa8db-1108-4455-b477-d5a5949050b3</GUID>
-      <Glyph>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\Glyphs\NI-XNET Status.png</Path>
-      </Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data.vi</Path>
-      </Item2Launch>
-    </Page>
-    <Page>
-      <Name>
-        <eng>Data Folder</eng>
-        <loc>Data Folder</loc>
-      </Name>
-      <DisallowRenaming>true</DisallowRenaming>
-      <GUID>6579feb5-1219-4a78-b605-46d71edd99ff</GUID>
-      <Glyph>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Folder.png</Path>
-      </Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Folder.vi</Path>
-      </Item2Launch>
-    </Page>
-    <Page>
-      <Name>
-        <eng>Read Data Tag</eng>
-        <loc>Read Data Tag</loc>
-      </Name>
-      <DisallowRenaming>true</DisallowRenaming>
-      <GUID>d90b1919-b5dd-4572-8e65-61ab77e1880c</GUID>
-      <Glyph>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Read Tag.png</Path>
-      </Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Tag.vi</Path>
-      </Item2Launch>
-    </Page>
-    <Page>
-      <Name>
-        <eng>Write Data Tag</eng>
-        <loc>Write Data Tag</loc>
-      </Name>
-      <DisallowRenaming>true</DisallowRenaming>
-      <GUID>ddff34a8-6f1a-4889-ab9a-0bec442b9af9</GUID>
-      <Glyph>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Write Tag.png</Path>
-      </Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Tag.vi</Path>
-      </Item2Launch>
-    </Page>
-    <Page>
-      <Name>
-        <eng>Data</eng>
-        <loc>Data</loc>
+        <eng>Tags</eng>
+        <loc>Tags</loc>
       </Name>
       <DisallowRenaming>true</DisallowRenaming>
       <DeleteProtection>true</DeleteProtection>
@@ -157,7 +135,7 @@
       </Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data.vi</Path>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Tags.vi</Path>
       </Item2Launch>
       <RunTimeMenu>
         <MenuItem>
@@ -170,6 +148,43 @@
           <Item2Launch>
             <Type>To Common Doc Dir</Type>
             <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Select OPC Channels.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>8a7b11b1-cc52-45b6-b4c4-8b9bf5a93b1b</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Add Folder</eng>
+            <loc>Add Folder</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Add Offline Data Folder.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+          <Type>VI</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Delete Multiple Items</eng>
+            <loc>Delete Multiple Items</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Dialogs\Delete Multiple Items.vi</Path>
           </Item2Launch>
         </MenuItem>
       </RunTimeMenu>
@@ -199,7 +214,228 @@
             <loc></loc>
           </Documentation>
         </Button>
+        <Button>
+          <ID>Add Folder</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Add Procedures.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>8a7b11b1-cc52-45b6-b4c4-8b9bf5a93b1b</ReferencedGUID>
+          <ButtonText>
+            <eng>Add Folder</eng>
+            <loc>Add Folder</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Add Folder</eng>
+            <loc>Add Folder</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Add Folder</eng>
+            <loc>Add Folder</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+        </Button>
       </ButtonList>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Data Folder</eng>
+        <loc>Data Folder</loc>
+      </Name>
+      <GUID>d68d3a8e-e073-4529-90c0-4eca5eb477b1</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Folder.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Folder Offline.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>b0b764ae-7c1c-445a-ac44-3fb4e25005d4</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Import Tags</eng>
+            <loc>Import Tags</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Import OPC Channels.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+          <Type>VI</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Delete Multiple Items</eng>
+            <loc>Delete Multiple Items</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Dialogs\Delete Multiple Items.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>Import Tags</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\import.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>b0b764ae-7c1c-445a-ac44-3fb4e25005d4</ReferencedGUID>
+          <ButtonText>
+            <eng>Import Tags</eng>
+            <loc>Import Tags</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Import Tags</eng>
+            <loc>Import Tags</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Import Tags</eng>
+            <loc>Import Tags</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Data Folder</eng>
+        <loc>Data Folder</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>6579feb5-1219-4a78-b605-46d71edd99ff</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Folder.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Folder.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+          <Type>VI</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Delete Multiple Items</eng>
+            <loc>Delete Multiple Items</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Dialogs\Delete Multiple Items.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Read Data Tag</eng>
+        <loc>Read Data Tag</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>d90b1919-b5dd-4572-8e65-61ab77e1880c</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Read Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Tag.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Write Data Tag</eng>
+        <loc>Write Data Tag</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>ddff34a8-6f1a-4889-ab9a-0bec442b9af9</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Write Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Tag.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
     </Page>
   </Pages>
   <CustomXML>
