@@ -10,14 +10,19 @@
 				<Item Name="Data Folder Offline.vi" Type="VI" URL="../Data Folder Offline.vi"/>
 				<Item Name="Data Folder.vi" Type="VI" URL="../Data Folder.vi"/>
 				<Item Name="Data Tag.vi" Type="VI" URL="../Data Tag.vi"/>
+				<Item Name="Poll List.vi" Type="VI" URL="../Poll List.vi"/>
+				<Item Name="Poll Lists.vi" Type="VI" URL="../Poll Lists.vi"/>
 				<Item Name="Status.vi" Type="VI" URL="../Status.vi"/>
 				<Item Name="Tags.vi" Type="VI" URL="../Tags.vi"/>
 			</Item>
 			<Item Name="RTMs" Type="Folder">
 				<Item Name="Add Offline Data Folder.vi" Type="VI" URL="../RTMs/Add Offline Data Folder.vi"/>
+				<Item Name="Add Poll List.vi" Type="VI" URL="../RTMs/Add Poll List.vi"/>
 				<Item Name="EnableDisable Main Page.vi" Type="VI" URL="../RTMs/EnableDisable Main Page.vi"/>
 				<Item Name="Import OPC Channels.vi" Type="VI" URL="../RTMs/Import OPC Channels.vi"/>
 				<Item Name="Select OPC Channels.vi" Type="VI" URL="../RTMs/Select OPC Channels.vi"/>
+				<Item Name="Select Poll List Tags.vi" Type="VI" URL="../RTMs/Select Poll List Tags.vi"/>
+				<Item Name="Test Connection.vi" Type="VI" URL="../RTMs/Test Connection.vi"/>
 			</Item>
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
 			<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
@@ -25,16 +30,22 @@
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Add Sections and Leaves.vi" Type="VI" URL="../SubVIs/Add Sections and Leaves.vi"/>
 			<Item Name="Change All Channel Tags.vi" Type="VI" URL="../SubVIs/Change All Channel Tags.vi"/>
+			<Item Name="ChannelSelectionScreen.vi" Type="VI" URL="../SubVIs/ChannelSelectionScreen.vi"/>
 			<Item Name="Connection.Properties.vi" Type="VI" URL="../SubVIs/Connection.Properties.vi"/>
 			<Item Name="Defer Front Panel Updates.vi" Type="VI" URL="../SubVIs/Defer Front Panel Updates.vi"/>
+			<Item Name="Get Selection from TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Get Selection from TreeBrowserWF.vi"/>
 			<Item Name="Handle Symbol Selection.vi" Type="VI" URL="../SubVIs/Handle Symbol Selection.vi"/>
+			<Item Name="Initialize TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Initialize TreeBrowserWF.vi"/>
 			<Item Name="Live.Load OPC Tree.vi" Type="VI" URL="../SubVIs/Live.Load OPC Tree.vi"/>
 			<Item Name="Live.Recurse Through OPC Items.vi" Type="VI" URL="../SubVIs/Live.Recurse Through OPC Items.vi"/>
 			<Item Name="Load CSV File.vi" Type="VI" URL="../SubVIs/Load CSV File.vi"/>
 			<Item Name="Load Help File.vi" Type="VI" URL="../SubVIs/Load Help File.vi"/>
 			<Item Name="Offline.Load OPC Tree.vi" Type="VI" URL="../SubVIs/Offline.Load OPC Tree.vi"/>
+			<Item Name="Poll.Properties.vi" Type="VI" URL="../SubVIs/Poll.Properties.vi"/>
+			<Item Name="PollList.Channels.vi" Type="VI" URL="../SubVIs/PollList.Channels.vi"/>
 			<Item Name="Remove Quotes from String.vi" Type="VI" URL="../SubVIs/Remove Quotes from String.vi"/>
 			<Item Name="Select OPC Tags.vi" Type="VI" URL="../SubVIs/Select OPC Tags.vi"/>
+			<Item Name="Test Connection GUI.vi" Type="VI" URL="../SubVIs/Test Connection GUI.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder">
 			<Item Name="Tag Selection Mode.ctl" Type="VI" URL="../Types/Tag Selection Mode.ctl"/>
