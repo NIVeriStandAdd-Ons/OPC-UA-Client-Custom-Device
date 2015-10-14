@@ -43,6 +43,8 @@
 			<Item Name="Get Selection from TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Get Selection from TreeBrowserWF.vi"/>
 			<Item Name="Handle Symbol Selection.vi" Type="VI" URL="../SubVIs/Handle Symbol Selection.vi"/>
 			<Item Name="Initialize TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Initialize TreeBrowserWF.vi"/>
+			<Item Name="Live.GetChannelInfo.vi" Type="VI" URL="../SubVIs/Live.GetChannelInfo.vi"/>
+			<Item Name="Live.GetNodeAttribute.vi" Type="VI" URL="../SubVIs/Live.GetNodeAttribute.vi"/>
 			<Item Name="Live.Load OPC Tree.vi" Type="VI" URL="../SubVIs/Live.Load OPC Tree.vi"/>
 			<Item Name="Live.Recurse Through OPC Items.vi" Type="VI" URL="../SubVIs/Live.Recurse Through OPC Items.vi"/>
 			<Item Name="Load CSV File.vi" Type="VI" URL="../SubVIs/Load CSV File.vi"/>

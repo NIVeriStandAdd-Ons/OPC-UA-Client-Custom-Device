@@ -4,8 +4,26 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">318799872</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Error Handling API" Type="Folder">
+			<Item Name="Error Handling API.lvlib" Type="Library" URL="../SubVIs/Error Handling API/Error Handling API.lvlib"/>
+		</Item>
+		<Item Name="Inline Async API" Type="Folder">
+			<Item Name="Inline Async API.lvlib" Type="Library" URL="../SubVIs/Inline Async API/Inline Async API.lvlib"/>
+		</Item>
+		<Item Name="Stop FG" Type="Folder">
+			<Item Name="Stop FG.lvlib" Type="Library" URL="../SubVIs/Stop FG/Stop FG.lvlib"/>
+		</Item>
+		<Item Name="PollEngine.Initialize.vi" Type="VI" URL="../SubVIs/PollEngine.Initialize.vi"/>
 		<Item Name="PollEngine.Main.vi" Type="VI" URL="../SubVIs/PollEngine.Main.vi"/>
+		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
+		<Item Name="RTMain.UpdateVSData.vi" Type="VI" URL="../SubVIs/RTMain.UpdateVSData.vi"/>
 	</Item>
-	<Item Name="Types" Type="Folder"/>
+	<Item Name="Types" Type="Folder">
+		<Item Name="PollEngine.Parameters.ctl" Type="VI" URL="../Types/PollEngine.Parameters.ctl"/>
+		<Item Name="PollEngine.StateVariables.ctl" Type="VI" URL="../Types/PollEngine.StateVariables.ctl"/>
+		<Item Name="ReadData.Settings" Type="VI" URL="../Types/ReadData.Settings"/>
+		<Item Name="StateVariables.ctl" Type="VI" URL="../Types/StateVariables.ctl"/>
+		<Item Name="Tag.Settings" Type="VI" URL="../../System Explorer/Types/Tag.Settings"/>
+	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
