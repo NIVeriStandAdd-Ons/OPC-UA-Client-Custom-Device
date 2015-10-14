@@ -125,6 +125,14 @@
           </Documentation>
         </Button>
       </ButtonList>
+      <ActionVIOnLoad>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\ActionVIOnLoad.vi</Path>
+      </ActionVIOnLoad>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>   
     </Page>
     <Page>
       <Name>
@@ -205,6 +213,14 @@
           </Documentation>
         </Button>
       </ButtonList>
+      <ActionVIOnLoad>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\ActionVIOnLoad.vi</Path>
+      </ActionVIOnLoad>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
     </Page>
     <Page>
       <Name>
@@ -384,6 +400,23 @@
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
 		    <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Status.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Status Channel</eng>
+        <loc>Status Channel</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>a46ed73d-ea23-4412-b593-60d5aae521a2</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\default fpga channel.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Status Channel.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -701,6 +734,100 @@
           </Item2Launch>
         </MenuItem>
       </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Read Data Tag Array</eng>
+        <loc>Read Data Tag Array</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>6479b41d-0e3c-49b5-aedf-866cd23fb01f</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Read Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Array.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Write Data Tag Array</eng>
+        <loc>Write Data Tag Array</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>f3b36dbc-3261-4b65-ab5a-798453c3ee28</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Write Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Array.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Read Data Array Tag</eng>
+        <loc>Read Data Array Tag</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>08a883f4-5c65-48b3-a5df-4895967c7758</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Read Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Array Tag.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Write Data Array Tag</eng>
+        <loc>Write Data Array Tag</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>3e79f943-56fb-48fe-83a8-f205399ffca9</GUID>
+      <Glyph>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\Glyphs\Write Tag.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\OPC UA Client Addon\OPC UA Client Configuration.llb\Data Array Tag.vi</Path>
+      </Item2Launch>
     </Page>
   </Pages>
   <CustomXML>

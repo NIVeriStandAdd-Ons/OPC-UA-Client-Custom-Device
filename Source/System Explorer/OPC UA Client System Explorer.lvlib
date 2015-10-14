@@ -5,13 +5,19 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="System Explorer" Type="Folder">
 		<Item Name="Dynamically Called" Type="Folder">
-			<Item Name="Actions" Type="Folder"/>
+			<Item Name="Actions" Type="Folder">
+				<Item Name="ActionVIOnCompile.vi" Type="VI" URL="../Actions/ActionVIOnCompile.vi"/>
+				<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../Actions/ActionVIOnLoad.vi"/>
+			</Item>
 			<Item Name="Extra Pages" Type="Folder">
+				<Item Name="Data Array Tag.vi" Type="VI" URL="../Data Array Tag.vi"/>
+				<Item Name="Data Array.vi" Type="VI" URL="../Data Array.vi"/>
 				<Item Name="Data Folder Offline.vi" Type="VI" URL="../Data Folder Offline.vi"/>
 				<Item Name="Data Folder.vi" Type="VI" URL="../Data Folder.vi"/>
 				<Item Name="Data Tag.vi" Type="VI" URL="../Data Tag.vi"/>
 				<Item Name="Poll List.vi" Type="VI" URL="../Poll List.vi"/>
 				<Item Name="Poll Lists.vi" Type="VI" URL="../Poll Lists.vi"/>
+				<Item Name="Status Channel.vi" Type="VI" URL="../Status Channel.vi"/>
 				<Item Name="Status.vi" Type="VI" URL="../Status.vi"/>
 				<Item Name="Tags.vi" Type="VI" URL="../Tags.vi"/>
 			</Item>
@@ -33,6 +39,7 @@
 			<Item Name="ChannelSelectionScreen.vi" Type="VI" URL="../SubVIs/ChannelSelectionScreen.vi"/>
 			<Item Name="Connection.Properties.vi" Type="VI" URL="../SubVIs/Connection.Properties.vi"/>
 			<Item Name="Defer Front Panel Updates.vi" Type="VI" URL="../SubVIs/Defer Front Panel Updates.vi"/>
+			<Item Name="Get Channel References.vi" Type="VI" URL="../SubVIs/Get Channel References.vi"/>
 			<Item Name="Get Selection from TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Get Selection from TreeBrowserWF.vi"/>
 			<Item Name="Handle Symbol Selection.vi" Type="VI" URL="../SubVIs/Handle Symbol Selection.vi"/>
 			<Item Name="Initialize TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Initialize TreeBrowserWF.vi"/>
