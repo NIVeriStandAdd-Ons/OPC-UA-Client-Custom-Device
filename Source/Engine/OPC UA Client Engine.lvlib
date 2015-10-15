@@ -18,7 +18,6 @@
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="PollEngine.Initialize.vi" Type="VI" URL="../SubVIs/PollEngine.Initialize.vi"/>
 		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
-		<Item Name="RTMain.UpdateVSData.vi" Type="VI" URL="../SubVIs/RTMain.UpdateVSData.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="PollEngine.Parameters.ctl" Type="VI" URL="../Types/PollEngine.Parameters.ctl"/>
