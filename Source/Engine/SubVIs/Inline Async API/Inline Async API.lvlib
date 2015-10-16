@@ -33,4 +33,5 @@
 	<Item Name="Run Process.vi" Type="VI" URL="../Run Process.vi"/>
 	<Item Name="Stop Processes.vi" Type="VI" URL="../Stop Processes.vi"/>
 	<Item Name="Write Data to VS Engine.vi" Type="VI" URL="../Write Data to VS Engine.vi"/>
+	<Item Name="Write Data.vi" Type="VI" URL="../Write Data.vi"/>
 </Library>

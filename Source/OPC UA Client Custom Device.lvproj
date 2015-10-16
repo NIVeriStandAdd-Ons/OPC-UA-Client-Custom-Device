@@ -486,7 +486,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5C6792E6-4F0A-44F6-91EA-2E75FD35AE8E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{974CCDD3-868F-4942-A732-1E2040584517}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -521,22 +521,31 @@
 				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target/OPC UA Client Engine.lvlib/Processes</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[3].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT PXI Target/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT PXI Target/OPC UA Client Engine.lvlib/Types</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -692,7 +701,7 @@ DirectoryIndex index.htm
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F33B487F-B1C3-4FEF-A518-1AE5BB25A55F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{96406E1C-C729-4464-B1DA-7263E811A27C}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -714,35 +723,44 @@ DirectoryIndex index.htm
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target/OPC UA Client Shared.lvlib/Shared</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[3].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[2].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[4].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target/OPC UA Client Shared.lvlib/Shared</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target/OPC UA Client Engine.lvlib/Types</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[3].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT CompactRIO Target/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT CompactRIO Target/OPC UA Client Engine.lvlib/Processes</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 			</Item>
 		</Item>
 	</Item>
