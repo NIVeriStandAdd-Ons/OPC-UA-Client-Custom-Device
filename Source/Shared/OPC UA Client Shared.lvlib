@@ -5,10 +5,13 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Shared" Type="Folder">
 		<Item Name="Types" Type="Folder">
+			<Item Name="Channel.Settings" Type="VI" URL="../Channel.Settings"/>
 			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Compiled.Settings.ctl"/>
 			<Item Name="Connection.Properties.ctl" Type="VI" URL="../Connection.Properties.ctl"/>
 			<Item Name="DataRefs.Location.ctl" Type="VI" URL="../DataRefs.Location.ctl"/>
 			<Item Name="PollEngine.Settings.ctl" Type="VI" URL="../PollEngine.Settings.ctl"/>
+			<Item Name="ReadWriteRefs.ctl" Type="VI" URL="../ReadWriteRefs.ctl"/>
+			<Item Name="WriteData.Info.ctl" Type="VI" URL="../WriteData.Info.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 		<Item Name="OPCUA.CreateConnectionString.vi" Type="VI" URL="../OPCUA.CreateConnectionString.vi"/>

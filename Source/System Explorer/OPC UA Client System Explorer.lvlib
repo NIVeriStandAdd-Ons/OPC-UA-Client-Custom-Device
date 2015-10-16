@@ -38,6 +38,7 @@
 			<Item Name="Change All Channel Tags.vi" Type="VI" URL="../SubVIs/Change All Channel Tags.vi"/>
 			<Item Name="ChannelSelectionScreen.vi" Type="VI" URL="../SubVIs/ChannelSelectionScreen.vi"/>
 			<Item Name="Connection.Properties.vi" Type="VI" URL="../SubVIs/Connection.Properties.vi"/>
+			<Item Name="Data.Properties.vi" Type="VI" URL="../SubVIs/Data.Properties.vi"/>
 			<Item Name="Defer Front Panel Updates.vi" Type="VI" URL="../SubVIs/Defer Front Panel Updates.vi"/>
 			<Item Name="Get Channel References.vi" Type="VI" URL="../SubVIs/Get Channel References.vi"/>
 			<Item Name="Get Selection from TreeBrowserWF.vi" Type="VI" URL="../SubVIs/Get Selection from TreeBrowserWF.vi"/>
