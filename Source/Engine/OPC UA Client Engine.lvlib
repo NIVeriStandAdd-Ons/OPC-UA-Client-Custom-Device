@@ -17,6 +17,7 @@
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="PollEngine.Initialize.vi" Type="VI" URL="../SubVIs/PollEngine.Initialize.vi"/>
+		<Item Name="RTMain.Close.vi" Type="VI" URL="../SubVIs/RTMain.Close.vi"/>
 		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
@@ -27,4 +28,5 @@
 		<Item Name="Tag.Settings" Type="VI" URL="../../System Explorer/Types/Tag.Settings"/>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
+	<Item Name="RT Driver VI_Test.vi" Type="VI" URL="../RT Driver VI_Test.vi"/>
 </Library>
