@@ -20,12 +20,15 @@
 <h3>Define Connection Settings</h3>
 <p class="Body">The first thing that needs to be done is defining the OPC Client connection settings.  Look up the OPC Server IP Address, port and security policy.  Enter these settings.  If login or certicates are required, enter those as well.</p>
 <p class="Body">If you are using NI OPC Servers, from the computer it is installed on, you can get to the OPC UA settings by going into the <strong>Start Menu>>All Programs>>National Instruments>>OPC Servers <Year>>>OPC UA Configuration</strong>. The <strong>Server Endpoints</strong> tab will show you the IP address, port and security policy settings.  Make sure your connection is Enabled.</p>
-<p class="Body">If certificates are required, go to the <strong>Instance Certificates</strong> tab and select <strong>Export server certificate</strong>. Browse to this certificate in the <strong>Server Cerificate</strong> field of the addon. You can typically leave the <strong>Client Certificate</strong> field blank.</p>
+<p class="Body">If certificates are required, go to the <strong>Instance Certificates</strong> tab and select <strong>Export server certificate</strong>. Browse to this certificate in the <strong>Server Cerificate</strong> field of the addon. You can select the default NI Client Certificate for the <strong>Client Certificate</strong> field from <strong>C:\ProgramData\National Instruments\certstore\opcua</strong>.</p>
 <p class="Body">NOTE: You will get an error on the first deployment or the first time you select the <strong>Test Connection</strong> button at the top of the page.  This is expected.  Go to the <strong>Trusted Clients</strong> tab in the <strong>OPC UA Configuration Manager</strong> and Trust the new certificate generated from NI. Re-initialize the OPC Server (in notification tray, right clicking on NI OPC Server symbol and select <strong>Reinitialize</strong>). Then re-deploy the VeriStand project. The error should be gone.</p>
 <h3>Test Connection</h3>
 <p class="Body">After entering all the fields, you can test the connection by selecting the <strong>Test Connection</strong> button at the top of the page.</p>
 <p class="Body">NOTE: this will only test the connection on Windows. You have to deploy the configuration before anything happens on RT.</p>
 <h3>Disable Add-on</h3>
 <p class="Body">To disable this add-on, right click on the add-on instance and select <strong>Disable</strong> from the shortcut menu.</p>
+<h2>Special RT Considerations</h2>
+<h3>RT Time Settings</h3>
+<p class="Body">You must make sure your OPC Server computer's system time is the same as the RT Target. Use MAX (Measurement and Automation Explorer) to adjust the RT Target time if necessary.</p>
 </body>
 </html>
