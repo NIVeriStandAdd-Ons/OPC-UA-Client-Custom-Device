@@ -80,6 +80,7 @@
 			<Item Name="SelectOPCTags.HandleSymbolSelection.vi" Type="VI" URL="../SubVIs/SelectOPCTags.HandleSymbolSelection.vi"/>
 			<Item Name="SelectOPCTags.LoadOPCTree.vi" Type="VI" URL="../SubVIs/SelectOPCTags.LoadOPCTree.vi"/>
 			<Item Name="SelectOPCTags.LoadOPCTreeOffline.vi" Type="VI" URL="../SubVIs/SelectOPCTags.LoadOPCTreeOffline.vi"/>
+			<Item Name="SelectOPCTags.RecurseThroughCurrent.vi" Type="VI" URL="../SubVIs/SelectOPCTags.RecurseThroughCurrent.vi"/>
 			<Item Name="SelectOPCTags.RecurseThroughOPCTags.vi" Type="VI" URL="../SubVIs/SelectOPCTags.RecurseThroughOPCTags.vi"/>
 			<Item Name="Tag.GetChannelRefs.vi" Type="VI" URL="../SubVIs/Tag.GetChannelRefs.vi"/>
 			<Item Name="Tag.Properties.vi" Type="VI" URL="../SubVIs/Tag.Properties.vi"/>
