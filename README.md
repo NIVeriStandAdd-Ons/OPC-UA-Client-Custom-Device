@@ -1,6 +1,6 @@
 ## OPC UA Client Custom Device ##
 
-**OPC UA Client** enables VeriStand to interface with OPC UA Servers.
+The **OPC UA Client Addon** supports connecting to any OPC UA server from Windows or Pharlap. It supports auto-discovery of tags for easy configuration as well as CSV import for offline configuration. It supports all data types and arrays of data types except strings. You can set up any number of poll rates for groups of channels. This allows for slow updates on the majority of tags with quick updates on critical tags. Read, write, and read/write tags are supported. Basic status information is also provided for the tag quality and OPC connection.
 
 ### LabVIEW Version ###
 
@@ -8,17 +8,21 @@ LabVIEW 2015
 
 ### Built Availability ###
 
-Builds are not available of this IP.
+Users are allowed to build anything under Build Specifications in the source's LabVIEW project(s). Pre-built versions are available upon request through NI Field Sales.
 
 ### Quality, Limitations ###
 
-This IP is a work in progress.
+IP has been tested by developer. It meets VeriStand addon coding best practices. It is currently used by various customers.
 
-OPC UA Nodes will be configured to be written or read. A read and write option will not be provided. It supports Boolean, Signed and Unsigned 8-, 16-, 32-, and 64-bit, and Single and Float Double data types.
+String and String Array data types are not supported.  All other items are supported.
 
 ### Dependencies ###
 
-N/A
+LabVIEW RT 15.0
+
+OpenG Array Library 4.1.1.14
+
+NI AMC 3.3.0.21
 
 ### License ###
 
