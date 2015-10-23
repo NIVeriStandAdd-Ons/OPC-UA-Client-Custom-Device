@@ -19,9 +19,7 @@ String and String Array data types are not supported.  All other items are suppo
 ### Dependencies ###
 
 LabVIEW RT 15.0
-
 OpenG Array Library 4.1.1.14
-
 NI AMC 3.3.0.21
 
 ### License ###
