@@ -46,6 +46,7 @@
 		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Poll.FormatErrorStatus.vi" Type="VI" URL="../SubVIs/Poll.FormatErrorStatus.vi"/>
 		<Item Name="Poll.Initialize.vi" Type="VI" URL="../SubVIs/Poll.Initialize.vi"/>
 		<Item Name="RTMain.Close.vi" Type="VI" URL="../SubVIs/RTMain.Close.vi"/>
 		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
