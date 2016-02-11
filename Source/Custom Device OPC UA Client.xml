@@ -22,7 +22,7 @@
 				<SupportedTarget>Windows</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\OPC UA Client Addon\OPC UA Client Engine Windows.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\OPC UA Client Addon\Windows\OPC UA Client Engine Windows.llb\RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\OPC UA Client Addon\OPC UA Client Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
@@ -30,7 +30,7 @@
 				<SupportedTarget>Pharlap</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\OPC UA Client Addon\c\OPC UA Client Engine Pharlap.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\OPC UA Client Addon\Pharlap\OPC UA Client Engine Pharlap.llb\RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\OPC UA Client Addon\OPC UA Client Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
@@ -38,7 +38,7 @@
 				<SupportedTarget>Linux_32_ARM</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\OPC UA Client Addon\OPC UA Client Engine LinuxARM.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\OPC UA Client Addon\Linux_32_ARM\OPC UA Client Engine LinuxARM.llb\RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\OPC UA Client Addon\OPC UA Client Engine LinuxARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
@@ -46,7 +46,7 @@
 				<SupportedTarget>Linux_x64</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\OPC UA Client Addon\OPC UA Client Engine Linux64.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\OPC UA Client Addon\Linux_x64\OPC UA Client Engine Linux64.llb\RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\OPC UA Client Addon\OPC UA Client Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
