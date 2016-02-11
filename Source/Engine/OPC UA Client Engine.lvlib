@@ -34,15 +34,6 @@
 	<Property Name="Serialized ACL" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Processes" Type="Folder">
-		<Item Name="Error Handling API" Type="Folder">
-			<Item Name="Error Handling API.lvlib" Type="Library" URL="../SubVIs/Error Handling API/Error Handling API.lvlib"/>
-		</Item>
-		<Item Name="Inline Async API" Type="Folder">
-			<Item Name="Inline Async API.lvlib" Type="Library" URL="../SubVIs/Inline Async API/Inline Async API.lvlib"/>
-		</Item>
-		<Item Name="Stop FG" Type="Folder">
-			<Item Name="Stop FG.lvlib" Type="Library" URL="../SubVIs/Stop FG/Stop FG.lvlib"/>
-		</Item>
 		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
@@ -55,6 +46,17 @@
 		<Item Name="Main.StateVariables.ctl" Type="VI" URL="../Types/Main.StateVariables.ctl"/>
 		<Item Name="Poll.Parameters.ctl" Type="VI" URL="../Types/Poll.Parameters.ctl"/>
 		<Item Name="Poll.StateVariables.ctl" Type="VI" URL="../Types/Poll.StateVariables.ctl"/>
+	</Item>
+	<Item Name="Userlib" Type="Folder">
+		<Item Name="Error Handling API" Type="Folder">
+			<Item Name="Error Handling API.lvlib" Type="Library" URL="../SubVIs/Error Handling API/Error Handling API.lvlib"/>
+		</Item>
+		<Item Name="Inline Async API" Type="Folder">
+			<Item Name="Inline Async API.lvlib" Type="Library" URL="../SubVIs/Inline Async API/Inline Async API.lvlib"/>
+		</Item>
+		<Item Name="Stop FG" Type="Folder">
+			<Item Name="Stop FG.lvlib" Type="Library" URL="../SubVIs/Stop FG/Stop FG.lvlib"/>
+		</Item>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
