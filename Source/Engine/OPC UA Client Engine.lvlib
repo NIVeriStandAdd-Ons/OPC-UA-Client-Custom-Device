@@ -48,9 +48,6 @@
 		<Item Name="Poll.StateVariables.ctl" Type="VI" URL="../Types/Poll.StateVariables.ctl"/>
 	</Item>
 	<Item Name="Userlib" Type="Folder">
-		<Item Name="Error Handling API" Type="Folder">
-			<Item Name="Error Handling API.lvlib" Type="Library" URL="../SubVIs/Error Handling API/Error Handling API.lvlib"/>
-		</Item>
 		<Item Name="Inline Async API" Type="Folder">
 			<Item Name="Inline Async API.lvlib" Type="Library" URL="../SubVIs/Inline Async API/Inline Async API.lvlib"/>
 		</Item>
