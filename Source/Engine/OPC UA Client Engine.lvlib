@@ -37,23 +37,19 @@
 		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Global Stop Actions.vi" Type="VI" URL="../SubVIs/Global Stop Actions.vi"/>
+		<Item Name="Initialize Global Stop.vi" Type="VI" URL="../SubVIs/Initialize Global Stop.vi"/>
 		<Item Name="Poll.FormatErrorStatus.vi" Type="VI" URL="../SubVIs/Poll.FormatErrorStatus.vi"/>
 		<Item Name="Poll.Initialize.vi" Type="VI" URL="../SubVIs/Poll.Initialize.vi"/>
 		<Item Name="RTMain.Close.vi" Type="VI" URL="../SubVIs/RTMain.Close.vi"/>
 		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
+		<Item Name="RTMain.ReadWrite Data.vi" Type="VI" URL="../SubVIs/RTMain.ReadWrite Data.vi"/>
+		<Item Name="RTMain.Write Data.vi" Type="VI" URL="../SubVIs/RTMain.Write Data.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="Main.StateVariables.ctl" Type="VI" URL="../Types/Main.StateVariables.ctl"/>
 		<Item Name="Poll.Parameters.ctl" Type="VI" URL="../Types/Poll.Parameters.ctl"/>
 		<Item Name="Poll.StateVariables.ctl" Type="VI" URL="../Types/Poll.StateVariables.ctl"/>
-	</Item>
-	<Item Name="Userlib" Type="Folder">
-		<Item Name="Inline Async API" Type="Folder">
-			<Item Name="Inline Async API.lvlib" Type="Library" URL="../SubVIs/Inline Async API/Inline Async API.lvlib"/>
-		</Item>
-		<Item Name="Stop FG" Type="Folder">
-			<Item Name="Stop FG.lvlib" Type="Library" URL="../SubVIs/Stop FG/Stop FG.lvlib"/>
-		</Item>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
