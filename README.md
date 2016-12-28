@@ -22,9 +22,9 @@ LabVIEW RT 15.0
 
 OpenG Array Library 4.1.1.14
 
-NI AMC 3.3.0.21
+NI Asynchronous Messaging Communication Library 3.3.1.22 or later
 
-Inline Async API (https://github.com/NIVeriStandAdd-Ons/Inline-Async-API)
+VeriStand Addon Inline Async API (https://github.com/NIVeriStandAdd-Ons/VeriStand-Addon-Inline-Async-API)
 
 ### License ###
 
