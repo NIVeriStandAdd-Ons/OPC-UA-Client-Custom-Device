@@ -123,7 +123,6 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Read.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Read/Read.lvclass"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
@@ -143,9 +142,11 @@
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Write/Write.lvclass"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand" Type="Document" URL="NationalInstruments.VeriStand">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI" Type="Document" URL="NationalInstruments.VeriStand.SystemDefinitionAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
@@ -165,24 +166,26 @@
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E8035317-FDF9-4FC1-9EF0-1450E8CAE472}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Data</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Data</Property>
 				<Property Name="Destination[2].destName" Type="Str">OPC UA Client Configuration LLB</Property>
-				<Property Name="Destination[2].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/OPC UA Client Configuration.llb</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="Destination[3].destName" Type="Str">Glyphs</Property>
-				<Property Name="Destination[3].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Glyphs</Property>
-				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Destination[3].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Glyphs</Property>
+				<Property Name="Destination[4].destName" Type="Str">XML</Property>
+				<Property Name="Destination[4].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
+				<Property Name="DestinationCount" Type="Int">5</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4D97F7EE-CF86-4C67-A7A8-2908ABE2FAB9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{23A26071-AD2A-4617-AA87-803CA1995179}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -191,7 +194,7 @@
 				<Property Name="Source[0].properties[2].value" Type="Bool">true</Property>
 				<Property Name="Source[0].propertiesCount" Type="Int">3</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">4</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device OPC UA Client.xml</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
@@ -438,7 +441,6 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Read.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Read/Read.lvclass"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -449,7 +451,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Write/Write.lvclass"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -679,7 +680,6 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Read.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Read/Read.lvclass"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -690,7 +690,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Write/Write.lvclass"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -712,7 +711,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8E4E4DFD-0D0B-41DB-A812-4317774F2F78}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_32_ARM/OPC UA Client Engine LinuxARM.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_32_ARM/OPC UA Client Engine LinuxARM.llb</Property>
@@ -946,7 +945,6 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Read.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Read/Read.lvclass"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -957,7 +955,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/Write/Write.lvclass"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -978,7 +975,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AAB13DEB-2C0E-49C6-AF78-2B1A6CFD155E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/OPC UA Client Engine Linux64.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/OPC UA Client Engine Linux64.llb</Property>

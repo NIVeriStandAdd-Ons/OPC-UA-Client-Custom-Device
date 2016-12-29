@@ -37,9 +37,9 @@
 		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
-		<Item Name="Global Stop Actions.vi" Type="VI" URL="../SubVIs/Global Stop Actions.vi"/>
-		<Item Name="Initialize Global Stop.vi" Type="VI" URL="../SubVIs/Initialize Global Stop.vi"/>
 		<Item Name="Poll.FormatErrorStatus.vi" Type="VI" URL="../SubVIs/Poll.FormatErrorStatus.vi"/>
+		<Item Name="Poll.GlobalStop.Actions.vi" Type="VI" URL="../SubVIs/Poll.GlobalStop.Actions.vi"/>
+		<Item Name="Poll.GlobalStop.Initialize.vi" Type="VI" URL="../SubVIs/Poll.GlobalStop.Initialize.vi"/>
 		<Item Name="Poll.Initialize.vi" Type="VI" URL="../SubVIs/Poll.Initialize.vi"/>
 		<Item Name="RTMain.Close.vi" Type="VI" URL="../SubVIs/RTMain.Close.vi"/>
 		<Item Name="RTMain.Initialize.vi" Type="VI" URL="../SubVIs/RTMain.Initialize.vi"/>
