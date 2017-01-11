@@ -12,6 +12,8 @@ Users are allowed to build anything under Build Specifications in the source's L
 
 ### Quality, Limitations ###
 
+KNOWN ISSUE: IF THE OPC CONNECTION DROPS WHILE THIS ADDON IS RUNNING ON A RT TARGET, THE RT TARGET WILL NEED TO BE REBOOTED.
+
 IP has been tested by developer. It meets VeriStand addon coding best practices. It is currently used by various customers.
 
 String and String Array data types are not supported.  All other items are supported.
