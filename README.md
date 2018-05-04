@@ -1,6 +1,6 @@
 ## OPC UA Client Custom Device ##
 
-The **OPC UA Client Addon** supports connecting to any OPC UA server from Windows or Pharlap. It supports auto-discovery of tags for easy configuration as well as CSV import for offline configuration. It supports all data types and arrays of data types except strings. You can set up any number of poll rates for groups of channels. This allows for slow updates on the majority of tags with quick updates on critical tags. Read, write, and read/write tags are supported. Basic status information is also provided for the tag quality and OPC connection.
+The OPC UA Client Addon supports connecting to any OPC UA server from Windows or Pharlap. It supports auto-discovery of tags for easy configuration as well as CSV import for offline configuration. It supports all data types and arrays of data types except strings. You can set up any number of poll rates for groups of channels. This allows for slow updates on the majority of tags with quick updates on critical tags. Read, write, and read/write tags are supported. Basic status information is also provided for the tag quality and OPC connection.
 
 ### LabVIEW Version ###
 
