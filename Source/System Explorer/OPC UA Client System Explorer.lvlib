@@ -76,7 +76,6 @@
 			<Item Name="Poll.RateProperties.vi" Type="VI" URL="../SubVIs/Poll.RateProperties.vi"/>
 			<Item Name="SelectOPCTags.AddItems.vi" Type="VI" URL="../SubVIs/SelectOPCTags.AddItems.vi"/>
 			<Item Name="SelectOPCTags.GetChannelInfo.vi" Type="VI" URL="../SubVIs/SelectOPCTags.GetChannelInfo.vi"/>
-			<Item Name="SelectOPCTags.GetNodeAttribute.vi" Type="VI" URL="../SubVIs/SelectOPCTags.GetNodeAttribute.vi"/>
 			<Item Name="SelectOPCTags.HandleSymbolSelection.vi" Type="VI" URL="../SubVIs/SelectOPCTags.HandleSymbolSelection.vi"/>
 			<Item Name="SelectOPCTags.LoadOPCTree.vi" Type="VI" URL="../SubVIs/SelectOPCTags.LoadOPCTree.vi"/>
 			<Item Name="SelectOPCTags.LoadOPCTreeOffline.vi" Type="VI" URL="../SubVIs/SelectOPCTags.LoadOPCTreeOffline.vi"/>
