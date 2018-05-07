@@ -4,7 +4,7 @@ The OPC UA Client Addon supports connecting to any OPC UA server from Windows or
 
 ### LabVIEW Version ###
 
-LabVIEW 2015
+LabVIEW 2017
 
 ### Built Availability ###
 
