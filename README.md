@@ -8,7 +8,11 @@ LabVIEW 2017
 
 ### Built Availability ###
 
-Users are allowed to build anything under Build Specifications in the source's LabVIEW project(s). Pre-built versions are available upon request through NI Field Sales.
+https://github.com/NIVeriStandAdd-Ons/OPC-UA-Client-Custom-Device/releases
+
+### Built Dependencies ###
+
+OPC UA Driver
 
 ### Quality, Limitations ###
 
@@ -18,7 +22,7 @@ IP has been tested by developer. It meets VeriStand addon coding best practices.
 
 String and String Array data types are not supported.  All other items are supported.
 
-### Dependencies ###
+### Source Dependencies ###
 
 LabVIEW RT 15.0
 
