@@ -28,3 +28,4 @@ install_destination = 'documents\National Instruments\NI VeriStand {veristand_ve
 name = 'Master Release'
 type = 'githubRelease'
 2017_release_branches = ["master",]
+2018_release_branches = ["master",]
