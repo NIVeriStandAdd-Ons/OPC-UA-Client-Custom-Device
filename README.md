@@ -30,7 +30,7 @@ OpenG Array Library 4.1.1.14
 
 NI Asynchronous Messaging Communication Library 3.3.1.22 or later
 
-VeriStand Addon Inline Async API (https://github.com/NIVeriStandAdd-Ons/VeriStand-Addon-Inline-Async-API)
+VeriStand Addon Inline Async API (https://github.com/ni/niveristand-custom-device-inline-async-api)
 
 HTML Help File Tools (https://github.com/NIVeriStandAdd-Ons/HTML-Help-File-Tools)
 
