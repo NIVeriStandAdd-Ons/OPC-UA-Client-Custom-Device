@@ -4,7 +4,7 @@ The OPC UA Client Addon supports connecting to any OPC UA server from Windows or
 
 ### LabVIEW Version ###
 
-LabVIEW 2017
+LabVIEW 2019
 
 ### Built Availability ###
 
@@ -24,7 +24,7 @@ String and String Array data types are not supported.  All other items are suppo
 
 ### Source Dependencies ###
 
-LabVIEW RT 15.0
+LabVIEW RT 19.0
 
 OpenG Array Library 4.1.1.14
 
