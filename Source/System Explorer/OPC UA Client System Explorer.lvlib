@@ -64,6 +64,7 @@
 			<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Convert Error Cluster to Table.vi" Type="VI" URL="../SubVIs/Convert Error Cluster to Table.vi"/>
 			<Item Name="CSV.Load.vi" Type="VI" URL="../SubVIs/CSV.Load.vi"/>
 			<Item Name="GUI.SelectOPCTags.vi" Type="VI" URL="../SubVIs/GUI.SelectOPCTags.vi"/>
 			<Item Name="GUI.SelectPollTags.vi" Type="VI" URL="../SubVIs/GUI.SelectPollTags.vi"/>
