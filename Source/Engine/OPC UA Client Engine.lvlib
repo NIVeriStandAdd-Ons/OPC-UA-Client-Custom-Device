@@ -37,6 +37,7 @@
 		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Format Debug String.vi" Type="VI" URL="../SubVIs/Format Debug String.vi"/>
 		<Item Name="Poll.FormatErrorStatus.vi" Type="VI" URL="../SubVIs/Poll.FormatErrorStatus.vi"/>
 		<Item Name="Poll.GlobalStop.Actions.vi" Type="VI" URL="../SubVIs/Poll.GlobalStop.Actions.vi"/>
 		<Item Name="Poll.GlobalStop.Initialize.vi" Type="VI" URL="../SubVIs/Poll.GlobalStop.Initialize.vi"/>
