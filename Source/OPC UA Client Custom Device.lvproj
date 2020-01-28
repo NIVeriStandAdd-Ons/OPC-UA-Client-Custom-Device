@@ -18,29 +18,27 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Glyphs" Type="Folder">
-			<Item Name="Folder.png" Type="Document" URL="../Glyphs/Folder.png"/>
-			<Item Name="OPC Disabled.png" Type="Document" URL="../Glyphs/OPC Disabled.png"/>
-			<Item Name="OPC.png" Type="Document" URL="../Glyphs/OPC.png"/>
-			<Item Name="Read Tag.png" Type="Document" URL="../Glyphs/Read Tag.png"/>
-			<Item Name="Tags.png" Type="Document" URL="../Glyphs/Tags.png"/>
-			<Item Name="Write Tag.png" Type="Document" URL="../Glyphs/Write Tag.png"/>
+		<Item Name="Addon" Type="Folder">
+			<Item Name="Support Files" Type="Folder">
+				<Item Name="Glyphs" Type="Folder" URL="../Addon/Support Files/Glyphs">
+					<Property Name="NI.DISK" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Help" Type="Folder" URL="../Addon/Support Files/Help">
+					<Property Name="NI.DISK" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Import File Formats" Type="Folder" URL="../Addon/Support Files/Import File Formats">
+					<Property Name="NI.DISK" Type="Bool">true</Property>
+				</Item>
+			</Item>
+			<Item Name="Custom Device OPC UA Client Addon.xml" Type="Document" URL="../Addon/Custom Device OPC UA Client Addon.xml"/>
+			<Item Name="OPC UA Client Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/OPC UA Client Addon Engine.lvlib"/>
+			<Item Name="OPC UA Client Addon Shared.lvlib" Type="Library" URL="../Addon/Addon Shared/OPC UA Client Addon Shared.lvlib"/>
+			<Item Name="OPC UA Client Addon System Explorer.lvlib" Type="Library" URL="../Addon/Addon System Explorer/OPC UA Client Addon System Explorer.lvlib"/>
 		</Item>
-		<Item Name="Help" Type="Folder" URL="../Help">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utilities/Copy .LLB to NI VeriStand dir.vi"/>
+			<Item Name="LLB Pre-Build CHM Build.vi" Type="VI" URL="../Utilities/LLB Pre-Build CHM Build.vi"/>
 		</Item>
-		<Item Name="NI VeriStand APIs" Type="Folder">
-			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
-			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
-		</Item>
-		<Item Name="Utility" Type="Folder">
-			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
-			<Item Name="LLB Pre-Build CHM Build.vi" Type="VI" URL="../Utility/LLB Pre-Build CHM Build.vi"/>
-		</Item>
-		<Item Name="Custom Device OPC UA Client.xml" Type="Document" URL="../Custom Device OPC UA Client.xml"/>
-		<Item Name="OPC UA Client Engine.lvlib" Type="Library" URL="../Engine/OPC UA Client Engine.lvlib"/>
-		<Item Name="OPC UA Client Shared.lvlib" Type="Library" URL="../Shared/OPC UA Client Shared.lvlib"/>
-		<Item Name="OPC UA Client System Explorer.lvlib" Type="Library" URL="../System Explorer/OPC UA Client System Explorer.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Reorder 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reorder 1D Array (CDB)__ogtk.vi"/>
@@ -91,6 +89,8 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Data Type Indicator.ctl" Type="VI" URL="/&lt;vilib&gt;/OPCUA/controls/Data Type Indicator.ctl"/>
@@ -133,7 +133,6 @@
 				<Item Name="ni_opcua.dll" Type="Document" URL="/&lt;vilib&gt;/OPCUA/ni_opcua.dll"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
-				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Node Class.ctl" Type="VI" URL="/&lt;vilib&gt;/OPCUA/controls/Node Class.ctl"/>
 				<Item Name="NodeId.ctl" Type="VI" URL="/&lt;vilib&gt;/OPCUA/controls/NodeId.ctl"/>
@@ -197,8 +196,8 @@
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
-				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Utility/LLB Pre-Build CHM Build.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Utilities/LLB Pre-Build CHM Build.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E8035317-FDF9-4FC1-9EF0-1450E8CAE472}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -206,91 +205,100 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Data</Property>
 				<Property Name="Destination[2].destName" Type="Str">OPC UA Client Configuration LLB</Property>
-				<Property Name="Destination[2].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Configuration.llb</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Addon Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="Destination[3].destName" Type="Str">Glyphs</Property>
 				<Property Name="Destination[3].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Glyphs</Property>
 				<Property Name="Destination[4].destName" Type="Str">XML</Property>
 				<Property Name="Destination[4].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
-				<Property Name="DestinationCount" Type="Int">5</Property>
+				<Property Name="Destination[5].destName" Type="Str">Import File Formats</Property>
+				<Property Name="Destination[5].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Import File Formats</Property>
+				<Property Name="DestinationCount" Type="Int">6</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8C1BAA99-585F-41D0-9786-A310ABF1A60E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0D90FC0B-3F28-4A1C-8E02-6FE482EEF94D}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[0].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[0].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[2].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[0].properties[2].value" Type="Bool">true</Property>
 				<Property Name="Source[0].propertiesCount" Type="Int">3</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">4</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device OPC UA Client.xml</Property>
+				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon System Explorer.lvlib/System Explorer</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/OPC UA Client System Explorer.lvlib/System Explorer</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[1].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[2].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[2].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[4].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[2].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/OPC UA Client Shared.lvlib/Shared</Property>
-				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[3].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Addon/Support Files/Glyphs</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Glyphs</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Addon/Support Files/Help/OPC UA.chm</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[4].type" Type="Str">Container</Property>
-				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Help/OPC UA.chm</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">4</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Addon/Custom Device OPC UA Client Addon.xml</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="Source[6].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">5</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Addon/Support Files/Import File Formats</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 			<Item Name="Engine Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{BDB37E78-1B48-4DD8-B51B-9DFE56743A02}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Engine Windows.llb</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Addon Engine Windows.llb</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{32214451-43E2-4D3E-92C8-CE819321FAC4}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Engine Windows.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/OPC UA Client Addon Engine Windows.llb</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Custom Devices/OPC UA Client Addon/Windows/Data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4D825A2A-4587-45E0-BB4B-63748EAED082}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{42FAB624-16D4-4089-8621-AD754BE002FE}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -301,7 +309,7 @@
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon Engine.lvlib/SubVIs</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Allow debugging</Property>
@@ -316,7 +324,7 @@
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/OPC UA Client Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon Shared.lvlib/Shared</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Allow debugging</Property>
@@ -331,7 +339,7 @@
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/OPC UA Client Engine.lvlib/Processes</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon Engine.lvlib/Processes</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -345,7 +353,7 @@
 				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/OPC UA Client Engine.lvlib/RT Driver VI.vi</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Addon/OPC UA Client Addon Engine.lvlib/RT Driver VI.vi</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -359,23 +367,7 @@
 				<Property Name="Source[4].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
-				<Property Name="Source[5].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[5].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref"></Property>
-				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[5].properties[2].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[5].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[5].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[4].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[5].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[5].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[5].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -431,8 +423,8 @@
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 		</Item>
-		<Item Name="OPC UA Client Engine.lvlib" Type="Library" URL="../Engine/OPC UA Client Engine.lvlib"/>
-		<Item Name="OPC UA Client Shared.lvlib" Type="Library" URL="../Shared/OPC UA Client Shared.lvlib"/>
+		<Item Name="OPC UA Client Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/OPC UA Client Addon Engine.lvlib"/>
+		<Item Name="OPC UA Client Addon Shared.lvlib" Type="Library" URL="../Addon/Addon Shared/OPC UA Client Addon Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -509,12 +501,12 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4DDC7D17-96A1-4AE7-BF29-EC0FD60BE89D}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap/OPC UA Client Engine Pharlap.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap/OPC UA Client Addon Engine Pharlap.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/Pharlap/OPC UA Client Engine Pharlap.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/Pharlap/OPC UA Client Addon Engine Pharlap.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -523,7 +515,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CE18B99-C3B2-4B59-8918-9C91E6ECD263}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3B97CF2A-7DF8-4C7B-A211-34ACF57E03D6}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -534,7 +526,7 @@
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Shared.lvlib/Shared</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Addon Shared.lvlib/Shared</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -549,7 +541,7 @@
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Engine.lvlib/Processes</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Addon Engine.lvlib/Processes</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -563,7 +555,7 @@
 				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Addon Engine.lvlib/SubVIs</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -571,7 +563,7 @@
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Engine.lvlib/Types</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Addon Engine.lvlib/Types</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -579,7 +571,7 @@
 				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Engine.lvlib/RT Driver VI.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT PXI Target - Pharlap/OPC UA Client Addon Engine.lvlib/RT Driver VI.vi</Property>
 				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -596,36 +588,20 @@
 				<Property Name="Source[6].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref"></Property>
+				<Property Name="Source[6].itemID" Type="Ref">/RT PXI Target - Pharlap/NI VeriStand APIs</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[6].properties[2].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[6].properties[2].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[6].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[3].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[6].properties[3].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[6].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[4].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[6].properties[4].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[6].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
-				<Property Name="Source[7].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/RT PXI Target - Pharlap/NI VeriStand APIs</Property>
-				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[7].properties[0].value" Type="Bool">true</Property>
-				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[7].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[7].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[7].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[7].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[7].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[7].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -682,8 +658,8 @@
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 		</Item>
-		<Item Name="OPC UA Client Engine.lvlib" Type="Library" URL="../Engine/OPC UA Client Engine.lvlib"/>
-		<Item Name="OPC UA Client Shared.lvlib" Type="Library" URL="../Shared/OPC UA Client Shared.lvlib"/>
+		<Item Name="OPC UA Client Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/OPC UA Client Addon Engine.lvlib"/>
+		<Item Name="OPC UA Client Addon Shared.lvlib" Type="Library" URL="../Addon/Addon Shared/OPC UA Client Addon Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -761,13 +737,13 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8E4E4DFD-0D0B-41DB-A812-4317774F2F78}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/Linux_32_ARM/OPC UA Client Engine LinuxARM.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/Linux_32_ARM/OPC UA Client Addon Engine LinuxARM.llb</Property>
 				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/Linux_32_ARM/OPC UA Client Engine LinuxARM.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/Linux_32_ARM/OPC UA Client Addon Engine LinuxARM.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -776,7 +752,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3148B8E5-7768-4B70-BB89-490245550CDF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F520E696-0E89-4C31-8BDD-AFD10FBF4920}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -790,7 +766,7 @@
 				<Property Name="Source[0].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Engine.lvlib/RT Driver VI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Addon Engine.lvlib/RT Driver VI.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -807,7 +783,7 @@
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Addon Shared.lvlib/Shared</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -823,7 +799,7 @@
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Engine.lvlib/Processes</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Addon Engine.lvlib/Processes</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Auto error handling</Property>
@@ -839,7 +815,7 @@
 				<Property Name="Source[4].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Addon Engine.lvlib/SubVIs</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -855,7 +831,7 @@
 				<Property Name="Source[5].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[5].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Engine.lvlib/Types</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/OPC UA Client Addon Engine.lvlib/Types</Property>
 				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[5].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -871,36 +847,20 @@
 				<Property Name="Source[6].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref"></Property>
-				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/NI VeriStand APIs</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[2].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[6].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[6].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[4].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[6].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[4].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[4].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
-				<Property Name="Source[7].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/NI VeriStand APIs</Property>
-				<Property Name="Source[7].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[1].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[7].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[2].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[7].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[3].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[7].properties[3].value" Type="Bool">true</Property>
-				<Property Name="Source[7].properties[4].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[7].properties[4].value" Type="Bool">true</Property>
-				<Property Name="Source[7].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[7].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -958,8 +918,8 @@
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 		</Item>
-		<Item Name="OPC UA Client Engine.lvlib" Type="Library" URL="../Engine/OPC UA Client Engine.lvlib"/>
-		<Item Name="OPC UA Client Shared.lvlib" Type="Library" URL="../Shared/OPC UA Client Shared.lvlib"/>
+		<Item Name="OPC UA Client Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/OPC UA Client Addon Engine.lvlib"/>
+		<Item Name="OPC UA Client Addon Shared.lvlib" Type="Library" URL="../Addon/Addon Shared/OPC UA Client Addon Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -1037,13 +997,13 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Devices/OPC UA Client Addon</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AAB13DEB-2C0E-49C6-AF78-2B1A6CFD155E}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/OPC UA Client Engine Linux64.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/OPC UA Client Addon Engine Linux64.llb</Property>
 				<Property Name="Bld_version.build" Type="Int">9</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/Linux_x64/OPC UA Client Engine Linux64.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/Linux_x64/OPC UA Client Addon Engine Linux64.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -1052,7 +1012,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DD759ABF-6D31-4449-8762-F00F2F15B297}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BF20646C-775C-4173-A29E-49D604354031}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Allow debugging</Property>
@@ -1066,7 +1026,7 @@
 				<Property Name="Source[0].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Engine.lvlib/RT Driver VI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Addon Engine.lvlib/RT Driver VI.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -1083,7 +1043,7 @@
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Engine.lvlib/Processes</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Addon Engine.lvlib/Processes</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Allow debugging</Property>
@@ -1099,7 +1059,7 @@
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Engine.lvlib/SubVIs</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Addon Engine.lvlib/SubVIs</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -1115,7 +1075,7 @@
 				<Property Name="Source[4].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Engine.lvlib/Types</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Addon Engine.lvlib/Types</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[4].properties[1].type" Type="Str">Allow debugging</Property>
@@ -1131,52 +1091,36 @@
 				<Property Name="Source[5].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[5].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref"></Property>
-				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Addon Shared.lvlib/Shared</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[5].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[2].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[5].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[5].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[5].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[5].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[5].properties[4].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[5].properties[4].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
 				<Property Name="Source[6].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/OPC UA Client Shared.lvlib/Shared</Property>
-				<Property Name="Source[6].properties[0].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[1].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[6].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[2].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/NI VeriStand APIs</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[2].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[6].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[6].properties[3].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[6].properties[3].value" Type="Bool">true</Property>
-				<Property Name="Source[6].properties[4].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[6].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[6].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[6].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
-				<Property Name="Source[7].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/NI VeriStand APIs</Property>
-				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[7].properties[0].value" Type="Bool">true</Property>
-				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[7].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[7].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[7].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[7].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[7].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[7].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[7].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 		</Item>
 	</Item>
