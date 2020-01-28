@@ -34,16 +34,18 @@
 	<Property Name="Serialized ACL" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Shared" Type="Folder">
-		<Item Name="Types" Type="Folder">
-			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Compiled.Settings.ctl"/>
-			<Item Name="DataRefs.Location.ctl" Type="VI" URL="../DataRefs.Location.ctl"/>
-			<Item Name="OPCConnection.Properties.ctl" Type="VI" URL="../OPCConnection.Properties.ctl"/>
-			<Item Name="Poll.ListProperties.ctl" Type="VI" URL="../Poll.ListProperties.ctl"/>
-			<Item Name="Tag.Settings.ctl" Type="VI" URL="../Tag.Settings.ctl"/>
-			<Item Name="Tag.WriteProperties.Info.ctl" Type="VI" URL="../Tag.WriteProperties.Info.ctl"/>
-			<Item Name="Tags.ReadWriteRefs.ctl" Type="VI" URL="../Tags.ReadWriteRefs.ctl"/>
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Constants.vi" Type="VI" URL="../SubVIs/Constants.vi"/>
+			<Item Name="OPCConnection.BuildURL.vi" Type="VI" URL="../SubVIs/OPCConnection.BuildURL.vi"/>
 		</Item>
-		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-		<Item Name="OPCConnection.BuildURL.vi" Type="VI" URL="../OPCConnection.BuildURL.vi"/>
+		<Item Name="Types" Type="Folder">
+			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Types/Compiled.Settings.ctl"/>
+			<Item Name="DataRefs.Location.ctl" Type="VI" URL="../Types/DataRefs.Location.ctl"/>
+			<Item Name="OPCConnection.Properties.ctl" Type="VI" URL="../Types/OPCConnection.Properties.ctl"/>
+			<Item Name="Poll.ListProperties.ctl" Type="VI" URL="../Types/Poll.ListProperties.ctl"/>
+			<Item Name="Tag.Settings.ctl" Type="VI" URL="../Types/Tag.Settings.ctl"/>
+			<Item Name="Tag.WriteProperties.Info.ctl" Type="VI" URL="../Types/Tag.WriteProperties.Info.ctl"/>
+			<Item Name="Tags.ReadWriteRefs.ctl" Type="VI" URL="../Types/Tags.ReadWriteRefs.ctl"/>
+		</Item>
 	</Item>
 </Library>

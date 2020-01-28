@@ -34,7 +34,7 @@
 	<Property Name="Serialized ACL" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Processes" Type="Folder">
-		<Item Name="Poll.Main.vi" Type="VI" URL="../SubVIs/Poll.Main.vi"/>
+		<Item Name="Poll.Main.vi" Type="VI" URL="../Processes/Poll.Main.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Format Debug String.vi" Type="VI" URL="../SubVIs/Format Debug String.vi"/>

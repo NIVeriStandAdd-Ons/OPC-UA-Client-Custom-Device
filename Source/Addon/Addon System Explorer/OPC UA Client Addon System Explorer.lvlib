@@ -40,16 +40,16 @@
 				<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../Actions/ActionVIOnLoad.vi"/>
 			</Item>
 			<Item Name="Extra Pages" Type="Folder">
-				<Item Name="Data Array Tag.vi" Type="VI" URL="../Data Array Tag.vi"/>
-				<Item Name="Data Array.vi" Type="VI" URL="../Data Array.vi"/>
-				<Item Name="Data Folder Offline.vi" Type="VI" URL="../Data Folder Offline.vi"/>
-				<Item Name="Data Folder.vi" Type="VI" URL="../Data Folder.vi"/>
-				<Item Name="Data Tag.vi" Type="VI" URL="../Data Tag.vi"/>
-				<Item Name="Poll List.vi" Type="VI" URL="../Poll List.vi"/>
-				<Item Name="Poll Lists.vi" Type="VI" URL="../Poll Lists.vi"/>
-				<Item Name="Status Channel.vi" Type="VI" URL="../Status Channel.vi"/>
-				<Item Name="Status.vi" Type="VI" URL="../Status.vi"/>
-				<Item Name="Tags.vi" Type="VI" URL="../Tags.vi"/>
+				<Item Name="Data Array Tag.vi" Type="VI" URL="../Extra Pages/Data Array Tag.vi"/>
+				<Item Name="Data Array.vi" Type="VI" URL="../Extra Pages/Data Array.vi"/>
+				<Item Name="Data Folder Offline.vi" Type="VI" URL="../Extra Pages/Data Folder Offline.vi"/>
+				<Item Name="Data Folder.vi" Type="VI" URL="../Extra Pages/Data Folder.vi"/>
+				<Item Name="Data Tag.vi" Type="VI" URL="../Extra Pages/Data Tag.vi"/>
+				<Item Name="Poll List.vi" Type="VI" URL="../Extra Pages/Poll List.vi"/>
+				<Item Name="Poll Lists.vi" Type="VI" URL="../Extra Pages/Poll Lists.vi"/>
+				<Item Name="Status Channel.vi" Type="VI" URL="../Extra Pages/Status Channel.vi"/>
+				<Item Name="Status.vi" Type="VI" URL="../Extra Pages/Status.vi"/>
+				<Item Name="Tags.vi" Type="VI" URL="../Extra Pages/Tags.vi"/>
 			</Item>
 			<Item Name="RTMs" Type="Folder">
 				<Item Name="Add Offline Data Folder.vi" Type="VI" URL="../RTMs/Add Offline Data Folder.vi"/>
