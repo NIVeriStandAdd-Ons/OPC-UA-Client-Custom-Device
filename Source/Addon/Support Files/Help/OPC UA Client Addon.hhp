@@ -1,10 +1,10 @@
 [OPTIONS]
 Compatibility=1.1 or later
-Compiled File=OPC UA.chm
+Compiled File=OPC UA Client Addon.chm
 Default Topic=HTML Help Source\Main.html
 Display compile progress=No
 Language=0x409 English (United States)
-Title=OPC UA
+Title=OPC UA Client Addon
 
 [FILES]
 HTML Help Source\css\expandable_tree.css

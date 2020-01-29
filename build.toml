@@ -3,7 +3,7 @@ build_output_dir = 'Built'
 archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\opc_ua_addon'
 
 [projects.cd]
-path = 'Source\OPC UA Client Custom Device.lvproj'
+path = 'Source\OPC UA Client Addon.lvproj'
 
 [[build.steps]]
 name = 'Configuration Library'
@@ -21,7 +21,7 @@ build_spec = 'Engine Release'
 [package]
 type = 'nipkg'
 name = 'opc-ua-addon-{veristand_version}'
-dev_xml_path = 'Source\Custom Device OPC UA Client.xml'
+dev_xml_path = 'Source\Addon\Custom Device OPC UA Client Addon.xml'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}'
 
 [[release.steps]]
