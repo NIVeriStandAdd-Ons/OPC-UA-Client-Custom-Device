@@ -20,7 +20,7 @@ build_spec = 'Engine Release'
 
 [package]
 type = 'nipkg'
-name = 'opc-ua-addon-{veristand_version}'
+name = 'ni-opc-ua-addon-{veristand_version}'
 dev_xml_path = 'Source\Addon\Custom Device OPC UA Client Addon.xml'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}'
 
