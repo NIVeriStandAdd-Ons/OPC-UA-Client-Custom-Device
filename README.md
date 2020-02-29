@@ -1,10 +1,13 @@
-## OPC UA Client Custom Device ##
+OPC-UA-Client-Addon
+========================
+
+### Description ###
 
 The OPC UA Client Addon supports connecting to any OPC UA server from Windows or Pharlap. It supports auto-discovery of tags for easy configuration as well as CSV import for offline configuration. It supports all data types and arrays of data types except strings. You can set up any number of poll rates for groups of channels. This allows for slow updates on the majority of tags with quick updates on critical tags. Read, write, and read/write tags are supported. Basic status information is also provided for the tag quality and OPC connection.
 
-### LabVIEW Version ###
+### Help ###
 
-LabVIEW 2019
+Help is included in most System Explorer sections.
 
 ### Built Availability ###
 
@@ -16,11 +19,13 @@ OPC UA Driver
 
 ### Quality, Limitations ###
 
-KNOWN ISSUE: IF THE OPC CONNECTION DROPS WHILE THIS ADDON IS RUNNING ON A RT TARGET, THE RT TARGET WILL NEED TO BE REBOOTED. THIS IS A NI R&D DRIVER BUG WHICH WILL REQUIRE AN UPDATE TO THE OPC UA API.
-
 IP has been tested by developer. It meets VeriStand addon coding best practices. It is currently used by various customers.
 
 String and String Array data types are not supported.  All other items are supported.
+
+### Source Version ###
+
+LabVIEW 2019
 
 ### Source Dependencies ###
 
