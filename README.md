@@ -33,9 +33,9 @@ LabVIEW RT 19.0
 
 NI Veristand Custom Device Development Tools (https://github.com/ni/niveristand-custom-device-development-tools/releases)
 
-OpenG Array Library 4.1.1.14
+OpenG Array Library 4.1.1.14 (https://www.vipm.io/package/oglib_array/)
 
-NI Asynchronous Messaging Communication Library 3.3.1.22 or later
+NI Asynchronous Messaging Communication Library 3.3.1.22 (https://www.vipm.io/package/ni_lib_amc/)
 
 ### License ###
 
